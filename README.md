@@ -1,4 +1,4 @@
 # portfolio-webpage
-single page portfolio webpage
+single page portfolio webpage.
 <br>
-Author - Muqtabis Ahmar
+Author - Muqtabis Ahmar.
