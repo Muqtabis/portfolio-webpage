@@ -1,3 +1,143 @@
-<p>hello world
-    
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muqtabis Ahmar- Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Muqtabis Ahmar
+        <div class="contact_info">
+          <img src="envelope.png" alt="Email Icon" width="20"/>
+          ahmarmuqtabis@gmail.com
+        </div>
+        <div class="contact_info">
+          <img src="phone.png" alt="Phone Icon" width="20"/>
+          +91 8431039329
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="mag.png.JPG" class="profile_image"/>
+    </div>
+    <div>
+      <h1>Hi, I'm Muqtabis Ahmar! 👋</h1>
+      <p>
+        I am a full stack web developer skilled in building dynamic and responsive web applications using both front-end and back-end technologies. I enjoy creating solutions that leverage cloud platforms and AI services.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html.png" alt="HTML" />
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="css.png" alt="CSS" />
+        <h6>CSS</h6>
+        <p>2 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="javascript.jpeg" alt="JavaScript" />
+        <h6>JavaScript</h6>
+        <p>1.5 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="node.png" alt="Node.js" />
+        <h6>Node.js</h6>
+        <p>1 year experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Chatbot</h3>
+        <ul>
+          <li>Created chatbot for an automobile site using Watson Assistant & HTML/CSS/JS</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Sentiment Analyzer</h3>
+        <ul>
+          <li>Used IBM NLU to analyze product reviews in real-time for an eCommerce brand</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Fashion Store</h3>
+        <ul>
+          <li>Created a responsive website with integrated shopping cart and Stripe checkout</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span> Jane is a very quick learner and quickly grasps key concepts of Web development. <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span> Working with Jane has been an awesome experience. She is highly knowledgeable. <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span> Jane has deep domain knowledge and always meets deadlines with high-quality work. <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leave a Recommendation -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend>Leave a Recommendation</legend>
+        <input type="text" id="recommender_name" placeholder="Your Name (optional)"> <br/>
+        <textarea id="new_recommendation" placeholder="Write your message here"></textarea>
+        <button onclick="addRecommendation()">Submit</button>
+      </fieldset>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <div class="iconbutton">
+    <a href="#home">
+      <img src="arrow.png" alt="Back to top" width="40"/>
+    </a>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <img src="checkmark--outline.svg" alt="Checkmark"/>
+    <h3>Thank you for your recommendation!</h3>
+    <button onclick="showPopup(false)">OK</button>
+  </div>
+</body>
+</html>
